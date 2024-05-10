@@ -1,6 +1,6 @@
 # handlerbars-ui-challenge
 
-A Challenge made just using HTML, CSS, Vanilla Javacript and Angular, on top of a basic webpack configuration for ease of development.
+A Challenge made just using HTML, CSS, Vanilla Javacript and Handlebars, on top of a basic webpack configuration for ease of development.
 
 ## Project Setup
 
