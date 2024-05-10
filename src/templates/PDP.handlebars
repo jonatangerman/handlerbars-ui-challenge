@@ -1,0 +1,41 @@
+{{> topBar}}
+
+<div class="pdp-wrapper">
+  <div class="pdp-container">
+    <div class="main-image-container">
+      <img src="{{product.image}}" alt="{{product.brand}}" />
+    </div>
+
+    <div class="info-container">
+      <div class="title">
+        <h1>{{product.brand}}</h1>
+        <span class="price-info h1">{{formatPrice price}}</span>
+      </div>
+      <p class="subtile info-text">
+        <span class="origin-info">Origin: {{product.origin}}</span>
+        <span class="divider">|</span>
+        <span class="stock-info">Stock: {{stock}}</span>
+      </p>
+    </div>
+
+    <div class="description-container">
+      <div class="title">Description</div>
+      <p class="description info-text">
+        {{responsiveTruncate product.information}}
+      </p>
+    </div>
+
+    <div class="size-container">
+      <p class="title">Size</p>
+      <div class="size-buttons-container">
+        {{#each product.skus}}
+          <button class="size-button {{#if (isActiveSku this.code ../currentSku)}}active{{/if}}" data-code="{{this.code}}">
+            {{formatSku this.name}}
+          </button>
+        {{/each}}
+      </div>
+    </div>
+
+  {{> cta}}
+  </div>
+</div>

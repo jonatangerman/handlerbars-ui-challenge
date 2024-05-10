@@ -1,0 +1,52 @@
+<div class="top-bar">
+  <span class="top-button"><i class="fa-solid fa-bars-staggered"></i></span>
+  <div class="avatar">
+    <img src="./icons/Sin título-1.jpg" alt="avatar" />
+  </div>
+</div>
+
+<main>
+  <div class="greeting-container">
+    <p>Hi Mr. Michael</p>
+    <h1>Welcome Back!</h1>
+  </div>
+
+  <div class="search-container">
+    <i class="fa-solid fa-magnifying-glass"></i>
+    <input
+      type="text"
+      disabled="true"
+      placeholder="Search burger, pizza, drink or etc..."
+    />
+  </div>
+
+  <div class="category-container">
+    <div class="top">
+      <h2>Drink Category</h2>
+      <button>See All</button>
+    </div>
+
+    <div class="category-buttons-container">
+      <button>All</button>
+      <button class="active beer"><img src="./icons/Beer.png" /> Beer</button>
+      <button class="wine"><img src="./icons/Wine-glass.png" />
+        Wine</button>
+    </div>
+  </div>
+
+  <div class="popular-container">
+    <div class="top">
+      <h2>Popular</h2>
+      <button>See All</button>
+    </div>
+    <div class="popular-list">
+      {{#each products}}
+        {{#with this}}
+            {{> productDetail prices=../prices }}
+        {{/with}}
+      {{/each}}
+    </div>
+  </div>
+
+  {{> stickyMenu}}
+</main>

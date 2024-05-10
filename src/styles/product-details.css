@@ -1,0 +1,108 @@
+.main-image-container {
+  margin-top: -50px;
+  text-align: center;
+}
+.main-image-container img {
+  width: 240px;
+}
+
+.info-container .title {
+  display: flex;
+  justify-content: space-between;
+}
+.info-container h1 {
+  margin-bottom: 0px;
+}
+
+.info-text {
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 18.23px;
+  color: #969696;
+}
+
+.divider {
+  display: inline-block;
+  margin-left: 3px;
+  margin-right: 3px;
+}
+
+.description-container .title {
+  margin-bottom: 10px;
+  font-weight: 700;
+}
+
+.info-container {
+  margin-bottom: 25px;
+}
+
+.description.info-text {
+  line-height: 24px;
+}
+
+.description-container {
+  margin-bottom: 20px;
+}
+
+.size-container {
+  margin-bottom: 45px;
+}
+
+.size-container .title {
+  margin-bottom: 10px;
+  font-weight: 700;
+}
+
+.size-button {
+  font-size: 14px;
+  font-weight: 400;
+  color: #969696;
+  border-radius: 15.5px;
+  border: 1px solid #969696;
+  padding: 7px 10px;
+}
+
+.size-button.active {
+  color: #ff9f24;
+  border: 1px solid #ff9f24;
+}
+
+.bag-button {
+  border: 1px solid #ff9f24;
+  border-radius: 12px;
+  width: 54px;
+  height: 54px;
+}
+
+.cta-container {
+  display: flex;
+  padding-bottom: 30px;
+}
+
+.ad-to-cart-button {
+  flex: 1;
+  color: #ffd;
+  background-color: #ff9f24;
+  border-radius: 12px;
+  font-weight: 600;
+  margin-left: 22px;
+}
+
+.size-buttons-container {
+  display: flex;
+  gap: 15px;
+}
+
+.hidden {
+  display: none;
+}
+
+.truncating-button {
+  color: #ff9f24;
+  font-weight: 600;
+  display: inline-block;
+}
+
+.pdp-container {
+  width: 100%;
+}

@@ -1,0 +1,8 @@
+<a class="product" href="/product/{{getId this.id this.brand}}">
+  <h3>{{this.brand}}</h3>
+  <img src="{{this.image}}" alt="{{this.brand}}" />
+  <div class="bottom">
+    <p>{{getFirstPrice prices this.skus.0.code}}</p>
+    <button>+</button>
+  </div>
+</a>

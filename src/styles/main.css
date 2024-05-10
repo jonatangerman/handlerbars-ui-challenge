@@ -1,0 +1,163 @@
+@font-face {
+  font-family: "DM Sans";
+  src: url("./fonts/DMSans-VariableFont_opsz,wght.ttf")
+    format("truetype-variations");
+  font-weight: 100 900;
+}
+
+@import url("./home.css");
+@import url("./product-details.css");
+
+body,
+html {
+  width: 100%;
+  height: 100vh;
+  margin: 0px;
+  font-family: "DM Sans", sans-serif;
+  box-sizing: border-box;
+}
+
+#app {
+  padding: 20px;
+  padding-bottom: 90px;
+}
+
+body {
+  font-family: DM Sans;
+  background-color: #fafafa;
+  box-sizing: border-box;
+}
+
+h1,
+.h1 {
+  font-family: DM Sans;
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 31.25px;
+  color: #323232;
+}
+
+button {
+  background-color: transparent;
+  border: 0px;
+  font-family: "DM Sans", sans-serif;
+  cursor: pointer;
+}
+
+h2 {
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 23.44px;
+  color: #323232;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.h1 {
+  color: #ff9f24;
+  margin-bottom: 0px;
+}
+
+@media only screen and (min-width: 400px) {
+  .category-buttons-container button.beer {
+    flex: 0;
+    flex-basis: 120px;
+  }
+
+  .category-buttons-container {
+    justify-content: flex-start;
+  }
+
+  .top-bar {
+    justify-content: space-between;
+  }
+}
+
+@media only screen and (min-width: 601px) {
+  .top-bar .top-button {
+    display: none;
+  }
+
+  .top-bar {
+    justify-content: flex-end;
+  }
+
+  .top-bar .avatar {
+    z-index: 1001;
+  }
+
+  .product-top-bar {
+    justify-content: center;
+  }
+
+  .pdp-wrapper {
+    display: flex;
+    justify-content: center;
+  }
+
+  .pdp-container {
+    width: 80%;
+  }
+
+  .ad-to-cart-button {
+    flex: 0;
+    flex-basis: 250px;
+  }
+}
+
+@media only screen and (min-width: 960px) {
+  .sticky-menu {
+    display: flex;
+    position: absolute;
+    top: 12px;
+    justify-content: flex-start;
+  }
+
+  .sticky-menu a {
+    flex: 0;
+    flex-basis: 200px;
+    text-align: left;
+    margin-left: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+  }
+
+  .sticky-menu a .info-text {
+    display: inline-block;
+  }
+
+  .pdp-container {
+    width: 70%;
+  }
+}
+
+@media only screen and (min-width: 1025px) {
+  .pdp-container {
+    width: 50%;
+  }
+
+  .product {
+    max-width: calc(25% - 15px);
+  }
+
+  .search-container {
+    width: 50%;
+  }
+
+  .category-container .top,
+  .popular-container .top {
+    justify-content: flex-start;
+    gap: 20px;
+  }
+}
+
+@media only screen and (min-width: 1250px) {
+  .pdp-container {
+    width: 35%;
+  }
+}
