@@ -81,6 +81,12 @@ a {
     display: none;
   }
 
+  .product-top-button {
+    display: block;
+    position: absolute;
+    left: 40px;
+  }
+
   .top-bar {
     justify-content: flex-end;
   }
